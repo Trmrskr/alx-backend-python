@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from utils import (access_nested_map, get_json, memoize)
 from parameterized import parameterized
+import unittest
 
 
 class TestAccessNestedMap(unittest.TestCase):
