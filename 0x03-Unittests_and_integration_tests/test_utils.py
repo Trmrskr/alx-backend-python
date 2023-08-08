@@ -55,13 +55,16 @@ class TestMemoize(unittest.TestCase):
             """ Test class for wrapping with memoize """
 
             def a_method(self):
+                """method to be mocked"""
                 return 42
 
             @memoize
             def a_property(self):
+                """Method to call method to be mocked"""
                 return self.a_method()
 
         with patch.object(TestClass, 'a_method') as mock:
+            """Use patch.object to mock Testclass"""
             test_class = TestClass()
             test_class.a_property()
             test_class.a_property()
