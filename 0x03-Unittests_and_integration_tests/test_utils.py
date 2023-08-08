@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+This module test the util class and functions using parameterize and mocking
+"""
 from utils import (access_nested_map, get_json, memoize)
 from parameterized import parameterized
 from typing import Dict
