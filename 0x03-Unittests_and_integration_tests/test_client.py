@@ -5,7 +5,7 @@ Parameterize and patch as decorators
 import unittest
 from client import GithubOrgClient
 from parameterized import parameterized, parameterized_class
-from unittest.mock import patch, PropertyMock, Mock
+from unittest.mock import patch, PropertyMock, Mock, MagicMock
 
 
 class TestGithubOrgClient(unittest.TestCase):
