@@ -82,11 +82,9 @@ cd 0x02-python_async_comprehension
 > [:point_right: Go to project](0x02-python_async_comprehension)
 
 
-# :man: Author and Credits.
-This project was done by [SE. Moses Mwangi](https://github.com/MosesSoftEng). Feel free to get intouch with me;
+# :man: Author.
+This project was done by [T.S. Alale](https://github.com/Trmrskr).;
 
-:iphone: WhatsApp [+254115227963](https://wa.me/254115227963)
-
-:email: Email [moses.soft.eng@gmail.com](mailto:moses.soft.eng@gmail.com)
+:email: Email [simonalale@gmail.com](mailto:simonalale@gmail.com)
 
 :thumbsup: A lot of thanks to [ALX-Africa Software Engineering](https://www.alxafrica.com/) program for the project requirements.
