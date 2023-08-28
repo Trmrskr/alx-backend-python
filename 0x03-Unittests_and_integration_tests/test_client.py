@@ -6,6 +6,7 @@ import unittest
 from client import GithubOrgClient
 from parameterized import parameterized, parameterized_class
 from unittest.mock import patch, PropertyMock, Mock, MagicMock
+from typing import Dict
 
 
 class TestGithubOrgClient(unittest.TestCase):
@@ -91,3 +92,14 @@ class TestGithubOrgClient(unittest.TestCase):
             )
             mock_public_repos_url.assert_called_once()
         mock_get_json.assert_called_once()
+
+
+        @parameterized.expand([
+            ({'license': {'key': 'bsd-3-clause'}}, 'bsd-3-clause', True),
+            ({'license': {'key': 'bs1-1.0'}}, 'bsd-3-clause', False),
+        ])
+        def test_has_license(self, repo: Dict, key: str, expected: bool) -> None:
+            """Tests the `has_license method`"""
+            gh_org_client = GithubOrgClient("google")
+            client_has_license = gh_org_client.has_license(repo, key)
+            self.assertEqual(client_has_license, expected)
